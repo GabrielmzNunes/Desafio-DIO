@@ -1,2 +1,4 @@
 # Desafio-DIO
-exercício git hub
+repositório de desafio de projetos DIO
+
+## 🚀
