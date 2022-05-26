@@ -1,0 +1,13 @@
+body{
+    background: gray;
+}
+#title, .post-title, .subtitle {
+    color: brown;
+
+}
+
+post-title{
+    font-size: 16px;
+    font-style: italic;
+
+}

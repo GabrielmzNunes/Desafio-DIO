@@ -1,0 +1,472 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2580
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 HelveticaNeue-Bold;\f1\fnil\fcharset0 HelveticaNeue;\f2\fswiss\fcharset0 Arial-BoldMT;
+\f3\fswiss\fcharset0 ArialMT;\f4\fswiss\fcharset0 Arial-ItalicMT;}
+{\colortbl;\red255\green255\blue255;\red26\green30\blue33;\red255\green255\blue255;\red51\green51\blue51;
+\red16\green60\blue192;}
+{\*\expandedcolortbl;;\cssrgb\c13725\c15686\c17255;\cssrgb\c100000\c100000\c100000;\cssrgb\c26275\c26275\c26275;
+\cssrgb\c6667\c33333\c80000;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}}
+\paperw11900\paperh16840\margl1440\margr1440\vieww12540\viewh13020\viewkind0
+\deftab560
+\pard\pardeftab560\slleading20\partightenfactor0
+
+\f0\b\fs26 \cf0 #SOBRE COMMIT NO GIT\
+\pard\pardeftab560\slleading20\partightenfactor0
+
+\f1\b0 \cf0 \
+Adicionar arquivo novo no git:\
+\pard\pardeftab560\slleading20\partightenfactor0
+
+\f0\b \cf0 git add .\
+\pard\pardeftab560\slleading20\pardirnatural\partightenfactor0
+\cf0 \
+\pard\pardeftab560\slleading20\partightenfactor0
+
+\f1\b0 \cf0 Commitar arquivos no Git local:\
+\pard\pardeftab560\slleading20\partightenfactor0
+
+\f0\b \cf0 git commit -m \'93mensagem de edi\'e7\'e3o\'94\
+\
+Commitar arquivos no git remoto:\
+git push origin main\
+ls 
+\f1\b0 : lista as pastas e arquivos dentro de uma pasta
+\f0\b \
+ls -a 
+\f1\b0 : exibe pastas e arquivos n\'e3o trancados
+\f0\b \
+\
+#Sobre HTML\
+\
+\
+\pard\pardeftab720\sl630\sa120\partightenfactor0
+
+\f2 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 HTML5\
+\pard\pardeftab720\sl489\sa120\partightenfactor0
+\cf2 Defini\'e7\'e3o e estrutura b\'e1sica\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f3\b0 \cf2 Em 1991 Tim Berners-Lee criou essa linguagem de marca\'e7\'e3o para melhorar a comunica\'e7\'e3o entre ele e seus colegas de trabalho no CERN, desde ent\'e3o j\'e1 surgiram 5 vers\'f5es e o HTML se tornou a base da web.\
+Com o HTML definimos o significado e a estrutura do conte\'fado da web e, al\'e9m de texto, nossas p\'e1ginas precisam de imagens, v\'eddeos e v\'e1rios outros formatos e para isso temos os elementos HTML.\
+Um elemento HTML \'e9 formado pela tag de abertura e seus atributos, o conte\'fado e uma tag de fechamento. E mais a frente veremos que existem elementos que n\'e3o tem tag de fechamento.\
+Com esses elementos podemos agrupar tipos de conte\'fado, alterar tamanho e forma de fontes e adicionar diferentes m\'eddias ao nossa p\'e1gina na web.\
+E agora podemos ver como \'e9 a estrutura b\'e1sica de um arquivo HTML.\
+A primeira linha do documento deve ser o <!DOCTYPE html>, apesar de parecer um elemento HTML ela apenas diz ao navegador que ele est\'e1 lidando com um arquivo do tipo HTML5. Os elementos HTML vem logo abaixo.\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f2\b \cf2 <html>
+\f3\b0 \
+A tag html \'e9 a raiz do seu documento, todos os elementos HTML devem estar dentro dela. E nela n\'f3s informamos ao navegador qual \'e9 o idioma desse nosso documento, atrav\'e9s do atributo lang, para o portugu\'eas brasileiro usamos pt-BR.\
+
+\f2\b <head>
+\f3\b0 \
+A tag head cont\'e9m elementos que ser\'e3o lidos pelo navegador, como os metadados - um exemplo \'e9 o charset, que \'e9 a codifica\'e7\'e3o de caracteres e a mais comum \'e9 a UTF-8, o JavaScript com a tag script, o CSS atrav\'e9s das tags style e link - veremos a diferen\'e7a quando falarmos sobre CSS - e o t\'edtulo da p\'e1gina com a tag title.\
+
+\f2\b <body>
+\f3\b0 \
+E dentro da tag body colocamos todo o conte\'fado vis\'edvel ao usu\'e1rio: textos, imagens, v\'eddeos.\
+\pard\pardeftab720\sl489\sa120\partightenfactor0
+
+\f2\b \cf2 Pr\'e1tica\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f3\b0 \cf2 Como exerc\'edcio para esse curso iremos construir um site pessoal, e precisamos come\'e7ar com a estrutura b\'e1sica que acabamos de ver.\
+Vamos criar um arquivo index.html e adicionar o doctype e os elementos html, head e body.\
+Depois adicionaremos os elementos meta e title, no primeiro adicionamos o atributo charset com o valor UTF-8 para dizer ao navegador qual \'e9 a codifica\'e7\'e3o dos caracteres e no segundo podemos colocar nosso nome.\
+E por \'faltimo escreveremos nosso nome dentro do elemento body apenas para enxergarmos isso no navegador.\
+\pard\pardeftab720\sl489\sa120\partightenfactor0
+
+\f2\b \cf2 Sem\'e2ntica\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f3\b0 \cf2 Durante muitos anos o elemento padr\'e3o no HTML era a div, constru\'edamos nosso conte\'fado todo baseado nela, e assim nascia a sopa de divs.\
+Mas em 2014 saiu a quinta vers\'e3o do HTML, e com ela vieram v\'e1rios mudan\'e7as importantes, como performance e acessibilidade, mas nesse curso introdut\'f3rio vamos focar na sem\'e2ntica.\
+A sem\'e2ntica nos permite descrever mais precisamente o nosso conte\'fado, agora um bloco de texto n\'e3o \'e9 apenas uma div, agora \'e9 um article e tem mais significado assim. E temos v\'e1rios elementos para ressignificar as divs:\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f2\b \cf2 <section>
+\f3\b0 \
+Representa uma se\'e7\'e3o gen\'e9rica de conte\'fado quando n\'e3o houver um elemento mais espec\'edfico para isso.\
+
+\f2\b <header>
+\f3\b0 \
+\'c9 o cabe\'e7alho da p\'e1gina ou de uma se\'e7\'e3o da p\'e1gina e normalmente cont\'e9m logotipos, menus, campos de busca.\
+
+\f2\b <article>
+\f3\b0 \
+Representa um conte\'fado independente e de maior relev\'e2ncia dentro de uma p\'e1gina, como um post de blog, uma not\'edcia em uma barra lateral ou um bloco de coment\'e1rios. Um article pode conter outros elementos, como header, cabe\'e7alhos, par\'e1grafos e imagens.\
+
+\f2\b <aside>
+\f3\b0 \
+\'c9 uma se\'e7\'e3o que engloba conte\'fados relacionados ao conte\'fado principal, como artigos relacionados, biografia do autor e publicidade. Normalmente s\'e3o representadas como barras laterais.\
+
+\f2\b <footer>
+\f3\b0 \
+Esse elemento representa o rodap\'e9 do conte\'fado ou de parte dele, pois ele \'e9 aceito dentro de v\'e1rios elementos, como article e section e at\'e9 do body. Exemplos de conte\'fado de um <footer> s\'e3o informa\'e7\'f5es de autor e\'a0
+\f4\i links
+\f3\i0 \'a0relacionados.\
+
+\f2\b <h1>
+\f3\b0 -
+\f2\b <h6>
+\f3\b0 \
+Eles n\'e3o foram criados na vers\'e3o 5 do HTML e nem s\'e3o espec\'edficos para sem\'e2ntica, mas servem para esse prop\'f3sito. S\'e3o utilizados para marcar a import\'e2ncia dos t\'edtulos, sendo <h1> o mais importante e <h6> o menos. Uma dica: use apenas um <h1> por p\'e1gina, pois ele representa o objetivo da sua p\'e1gina.\
+\pard\pardeftab720\sl489\sa120\partightenfactor0
+
+\f2\b \cf4 \strokec4 Pr\'e1tica\cf2 \strokec2 \
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f3\b0 \cf2 Dando continuidade ao nosso site iremos montar sua estrutura. Pensei em adicionarmos um cabe\'e7alho com nosso nome, uma lista de posts (como um blog) e um rodap\'e9 para nossos contatos.\
+Vamos abrir nosso arquivo index.html e come\'e7ar pelo cabe\'e7alho: criamos um <header> logo abaixo do <body> e colocamos o t\'edtulo da nossa p\'e1gina dentro de um <h1>.\
+Depois criaremos a lista de postagens: abrimos um elemento section e dentro dele adicionamos outro <header> contendo um <h2>. Notem que eu posso ter mais de um <header> na p\'e1gina.\
+Para criar nossa postagem adicionamos um <article> com um <header> e um <h3>.\
+O \'faltimo passo desta etapa \'e9 criar um rodap\'e9 para nossas informa\'e7\'f5es de contato: crie um elemento footer antes de fechar o </body>.\
+N\'e3o se preocupe com o layout e com conte\'fado da p\'e1gina, n\'f3s vamos tratar isso mais a frente.\
+\pard\pardeftab720\sl489\sa120\partightenfactor0
+
+\f2\b \cf2 Textos e links\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f3\b0 \cf2 A cria\'e7\'e3o do HTML foi motivada pela necessidade de compartilhar textos e documentos, e mesmo depois de quase 30 anos, com toda a evolu\'e7\'e3o da web, isso ainda representa uma boa parte do conte\'fado da web.\
+J\'e1 falamos anteriormente sobre os elementos h1-h6 e, eles s\'e3o essenciais para nos indicar visualmente a import\'e2ncia e localiza\'e7\'e3o de se\'e7\'f5es de texto na p\'e1gina, mas para textos maiores e mais densos usamos o elemento p.\
+O <p> representa um par\'e1grafo, mas ele n\'e3o suporta apenas texto, podemos adicionar imagens, c\'f3digo, v\'eddeos e v\'e1rios outros tipos de conte\'fado dentro dele.\
+Um outro elemento interessante e extremamente necess\'e1rio na web \'e9 o <a> - que significa anchor/\'e2ncora, ele representa um hyperlink, \'e9 ele que interliga v\'e1rios conte\'fados e p\'e1ginas na web.\
+O elemento a tem v\'e1rios atributos, mas vamos focar em dois, o href e o target.\
+O href representa o\'a0
+\f4\i hyperlink
+\f3\i0 \'a0para onde sua \'e2ncora aponta, pode ser uma p\'e1gina do seu ou de outro site, um e-mail e at\'e9 mesmo um telefone, os dois \'faltimos precisam dos prefixos mailto: e tel:, respectivamente.\
+O target neste momento vai servir para nos ajudar a abrir nossos links em outra aba do navegador usando o valor _blank.\
+\pard\pardeftab720\sl489\sa120\partightenfactor0
+
+\f2\b \cf4 \strokec4 Pr\'e1tica\cf2 \strokec2 \
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f3\b0 \cf2 Vamos adicionar um texto fict\'edcio a nossa postagem: logo ap\'f3s o fechamento do </header> vamos adicionar um elemento p e inserir um texto que vamos retirar do site{\field{\*\fldinst{HYPERLINK "https://lipsum.com/"}}{\fldrslt \'a0\cf5 \strokec5 lipsum.com}}\
+E em alguma parte deste texto vamos adicionar um\'a0
+\f4\i hiperlink
+\f3\i0 \'a0para outra p\'e1gina e um para nosso e-mail.\
+Criarei um\'a0
+\f4\i hyperlink
+\f3\i0 \'a0para meu perfil no\'a0
+\f4\i LinkedIn:
+\f3\i0 \'a0adicione o\'a0
+\f4\i hyperlink
+\f3\i0 \'a0no atributo href e o valor _blank no atributo target, assim o\'a0
+\f4\i link
+\f3\i0 \'a0ser\'e1 aberto em outra aba. E em algum outro lugar do texto adicionarei meu e-mail e um link para ele, desta forma: <a href="mailto:lucas@vilaboim.com" target="_blank">lucas@vilaboim.com</a>\
+\pard\pardeftab720\sl489\sa120\partightenfactor0
+
+\f2\b \cf2 Imagens\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f3\b0 \cf2 A web tamb\'e9m \'e9 feita de imagens e para represent\'e1-las temos o elemento <img>, ele \'e9 um daqueles elementos sem tag de fechamento.\
+O elemento img \'e9 bem simples, contendo apenas 2 atributos pr\'f3prios, o src e o alt.\
+O src \'e9 obrigat\'f3rio e guarda o caminho para a imagem que voc\'ea quer mostrar na p\'e1gina.\
+O alt n\'e3o \'e9 obrigat\'f3rio mas \'e9 altamente recomendado por melhorar a acessibilidade, ele mostra a descri\'e7\'e3o da imagem caso ela n\'e3o carregue e leitores de tela usam esse atributo para descrever a imagem para o usu\'e1rio saber o que ela significa.\
+\pard\pardeftab720\sl489\sa120\partightenfactor0
+
+\f2\b \cf4 \strokec4 Pr\'e1tica\cf2 \strokec2 \
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f3\b0 \cf2 Vamos adicionar uma imagem ao cabe\'e7alho da p\'e1gina e uma imagem a postagem.\
+Primeiro vamos colocar as imagens na pasta do nosso projeto. Para a imagem do cabe\'e7alho eu escolhi uma foto minha com 100\'a0
+\f4\i pixels
+\f3\i0 \'a0de largura e 100\'a0
+\f4\i pixels
+\f3\i0 \'a0de altura e para a imagem da postagem eu procurei por\'a0
+\f4\i html code
+\f3\i0 \'a0no site Unsplash, escolhi uma das imagens e deixei ela com 960\'a0
+\f4\i pixels
+\f3\i0 \'a0de largura por 322\'a0
+\f4\i pixels
+\f3\i0 \'a0de altura.\
+Dentro do primeiro <header> da p\'e1gina e antes do <h1> iremos adicionar um elemento img e no atributo src colocamos o caminho para a nossa foto, /lucas-vilaboim.jpg, e o atributo alt deve conter um significado para a imagem, como no meu caso \'e9 uma ilustra\'e7\'e3o, colocarei\'a0
+\f4\i Ilustra\'e7\'e3o do rosto de Lucas Vilaboim
+\f3\i0 .\
+E dentro do <header> do <article> vamos fazer a mesma coisa, mas agora depois do <h3>, e no atributo alt colocaremos\'a0
+\f4\i Editor de texto mostrando c\'f3digos HTML
+\f3\i0 .\
+\pard\pardeftab720\sl489\sa120\partightenfactor0
+
+\f2\b \cf2 Listas\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f3\b0 \cf2 Os \'faltimos elementos que veremos neste m\'f3dulo s\'e3o os relacionados a listas: <ul>, <ol> e <li>.\
+Listas servem para agrupar uma cole\'e7\'e3o de itens, como uma lista de ingredientes ou, como ser\'e1 no nosso caso, uma lista com contatos.\
+O elemento ul cria uma lista n\'e3o ordenada, onde a ordem dos elementos n\'e3o \'e9 importante, e \'e9 representada com pontos, c\'edrculos ou quadrados.\
+O <ol> serve para criar lista ordenadas, nessas a ordem importa, portanto elas s\'e3o representadas com n\'fameros, algarismos romanos ou letras.\
+E o elemento li \'e9 um item dentro de uma dessas listas. Um <li> pode conter v\'e1rios tipos de conte\'fados, como par\'e1grafos, imagens e at\'e9 outras listas.\
+\pard\pardeftab720\sl489\sa120\partightenfactor0
+
+\f2\b \cf4 \strokec4 Pr\'e1tica\cf2 \strokec2 \
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f3\b0 \cf2 Adicionaremos uma lista de contatos ao rodap\'e9 da nossa p\'e1gina, e para isso usaremos tamb\'e9m o elemento\'a0
+\f4\i a
+\f3\i0 \'a0que vimos anteriormente.\
+Crie um elemento ul e dentro dele adicione um <li> com um elemento a, no atributo href adicione o\'a0
+\f4\i link
+\f3\i0 \'a0de alguma rede social que voc\'ea mantenha e, no conte\'fado da \'e2ncora coloque o nome dessa rede.\
+\
+\
+\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f2\b \cf2 CSS\
+\pard\pardeftab720\sl630\sa120\partightenfactor0
+\cf2 CSS 3\
+\pard\pardeftab720\sl489\sa120\partightenfactor0
+\cf2 Defini\'e7\'e3o e seletores\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f3\b0 \cf2 Ap\'f3s a cria\'e7\'e3o do HTML a necessidade de formatar as p\'e1ginas ficou evidente, assim, em 1996, foi criada a linguagem de estilo que conhecemos por CSS.\
+A sintaxe \'e9 bem simples e pode ser explicada com a frase "voc\'ea cria regras de estilo para elementos ou grupos de elementos".\
+Vamos usar um elemento HTML que vimos anteriormente, a \'e2ncora <a>, para exemplificar.\
+Uma regra CSS \'e9 representada por um seletor ou um grupo de seletores, no nosso caso \'e9 o <a>, ent\'e3o dentro de um par de chaves adicionamos as declara\'e7\'f5es, no exemplo acima estamos alterando cor e tamanho da fonte dessa \'e2ncora, as declara\'e7\'f5es s\'e3o formadas por uma propriedade e um valor.\
+Percebam que podemos colocar v\'e1rios seletores em uma regra separando-os por v\'edrgula.\
+E h\'e1 um \'faltimo detalhe nesse exemplo: a pseudo-classe. Elementos HTML sofrem altera\'e7\'f5es causadas pela intera\'e7\'e3o do usu\'e1rio, como mover o mouse por cima ou clicar nesse elemento.\
+O\'a0
+\f4\i a:hover
+\f3\i0 \'a0do exemplo significa que a \'e2ncora tamb\'e9m ter\'e1 essa apar\'eancia quando o usu\'e1rio passar o mouse por cima de um\'a0
+\f4\i hyperlink
+\f3\i0 .\
+\'a0\
+\pard\pardeftab720\sl489\sa120\partightenfactor0
+
+\f2\b \cf2 ID x Classe\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f3\b0 \cf2 No exemplo anterior criamos uma regra que altera um elemento HTML diretamente, mas isso significa que todos os elementos <a> ficar\'e3o com aquela apar\'eancia, e normalmente temos sites mais complexos que precisam de v\'e1rias regras diferentes para elementos iguais.\
+Para ficar mais tang\'edvel vamos relembrar um pouco o site que come\'e7amos a fazer no m\'f3dulo passado, ele tinha v\'e1rios elementos header, mas n\'e3o vamos querer que o header principal tenha a mesma formata\'e7\'e3o que o header de uma postagem, \'e9 a\'ed que entram os IDs e Classes.\
+O seletor que vimos no primeiro exemplo \'e9 um seletor de tipo, pois ele representa um elemento HTML, e com IDs e Classes podemos representar qualquer tipo de elemento mas h\'e1 algumas diferen\'e7as entre eles:\
+ID: \'e9 representado pelo s\'edmbolo # (hash) seguido de um nome para esse ID.\
+Classe: a classe \'e9 representada de forma parecida do ID, mas \'e9 precedida por um ponto em vez do hash.\
+E a diferen\'e7a mais importante entre eles \'e9 a forma como devem ser usados: o ID s\'f3 pode ser usado uma vez em uma p\'e1gina HTML enquanto a classe n\'e3o tem restri\'e7\'f5es.\
+\'a0\
+\pard\pardeftab720\sl441\sa120\partightenfactor0
+
+\f2\b \cf4 \strokec4 Exerc\'edcio\cf2 \strokec2 \
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f3\b0 \cf2 Vamos adicionar algumas classes no nosso site e alterar alguns elementos, mas antes precisamos adicionar um arquivo CSS a nossa p\'e1gina.\
+No m\'f3dulo de HTML descobrimos que podemos adicionar CSS de duas formas, com o elemento\'a0
+\f4\i style
+\f3\i0 , e assim suas regras ficar\'e3o no arquivo HTML, ou podemos criar um arquivo CSS e adicion\'e1-lo na p\'e1gina atrav\'e9s do elemento\'a0
+\f4\i link
+\f3\i0 , e \'e9 essa forma que usaremos.\
+Crie um elemento\'a0
+\f4\i link
+\f3\i0 \'a0dentro do head do seu arquivo e adicione os atributos\'a0
+\f4\i rel="stylesheet"
+\f3\i0 \'a0e\'a0
+\f4\i href="style.css"
+\f3\i0 , o\'a0
+\f4\i rel
+\f3\i0 \'a0denota o tipo de arquivo que estamos incluindo na p\'e1gina e o\'a0
+\f4\i href
+\f3\i0 \'a0\'e9 o caminho para o arquivo. E na mesma pasta do arquivo\'a0
+\f4\i HTML
+\f3\i0 \'a0crie um arquivo chamado\'a0
+\f4\i style.css
+\f3\i0 .\
+Agora sim vamos ao CSS, adicione um ID #title ao h1 da p\'e1gina, pois queremos que ele seja \'fanico, e depois adicione as classes .subtitle e .post_title ao h2 e h3, respectivamente.\
+No arquivo CSS vamos mudar a cor desses tr\'eas t\'edtulos, e depois alterar o tamanho da fonte do t\'edtulo da postagem.\
+\'a0\
+\pard\pardeftab720\sl489\sa120\partightenfactor0
+
+\f2\b \cf2 Box-model\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f3\b0 \cf2 Quando estamos criando o layout de um site o navegador representa cada elemento HTML\'a0 como uma caixa retangular, isso \'e9 o box-model. E com CSS n\'f3s alteramos a apar\'eancia dessa caixa (largura, altura, cor de fundo, etc.). Essa caixa \'e9 composta por 4 \'e1reas: o conte\'fado, o padding, a borda e a margem.\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls1\ilvl0\cf2 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 As margens (margin) s\'e3o espa\'e7amentos entre elementos;\cb1 \
+\ls1\ilvl0\cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 As bordas (border) ;\cb1 \
+\ls1\ilvl0\cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 O padding \'e9 um espa\'e7amento entre as bordas e o conte\'fado, a diferen\'e7a para as margens \'e9 que declara\'e7\'f5es de imagem de fundo funcionam nele;\cb1 \
+\ls1\ilvl0\cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 O conte\'fado (content) \'e9 o que o seu bloco representa, um texto, uma imagem, um v\'eddeo;\cb1 \
+\pard\pardeftab720\sa240\partightenfactor0
+\cf2 \cb3 \'a0\
+\pard\pardeftab720\sl441\sa120\partightenfactor0
+
+\f2\b \cf4 \strokec4 Exerc\'edcio\cf2 \strokec2 \
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f3\b0 \cf2 Para enxergamos o box-model vamos adicionar cores e bordas a alguns elementos.\
+Primeiro adicionaremos uma cor de fundo para a visualiza\'e7\'e3o ficar mais f\'e1cil, usaremos a propriedade\'a0
+\f4\i background
+\f3\i0 \'a0com o valor\'a0
+\f4\i #fcfcfc
+\f3\i0 \'a0no elemento\'a0
+\f4\i body
+\f3\i0 .\
+Depois vamos adicionar uma classe ao <article>, pode ser .post, e ent\'e3o vamos colocar a cor branca de fundo com a propriedade\'a0
+\f4\i background
+\f3\i0 \'a0e o valor\'a0
+\f4\i #FFF
+\f3\i0 . Agora conseguimos enxergar o\'a0
+\f4\i content
+\f3\i0 \'a0do\'a0
+\f4\i box-model
+\f3\i0 .\
+Vamos adicionar um\'a0
+\f4\i padding
+\f3\i0 \'a0de 10 pixels neste mesmo\'a0
+\f4\i article
+\f3\i0 . Perceberam o espa\'e7amento que surgiu em volta do nosso conte\'fado?\
+Agora adicionamos um borda mais escura a ele com a propriedade border. Vou falar mais detalhadamente sobre border mais a frente, mas por enquanto vamos deixar essa borda com 3 pixels de largura, o contorno s\'f3lido e a cor azul.\
+E por \'faltimo vamos adicionar uma margem do lado de fora do post com a propriedade\'a0
+\f4\i margin
+\f3\i0 \'a0e o valor 10 pixels.\
+E agora inspecionando o nosso elemento conseguimos todas aquelas camadas citadas antes: o conte\'fado em azul, o\'a0
+\f4\i padding
+\f3\i0 \'a0em verde, as bordas em marrom e as margens em laranja.\
+E j\'e1 que come\'e7amos a falar sobre bordas e cor de fundo, no pr\'f3ximo v\'eddeo vamos nos aprofundar nessas propriedades.\
+\'a0\
+\pard\pardeftab720\sl489\sa120\partightenfactor0
+
+\f2\b \cf2 Estilizando elementos\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f3\b0 \cf2 Agora que entendemos o box-model podemos focar em deixar nosso site mais bonito, ent\'e3o vamos repassar pelas propriedades j\'e1 citadas:\
+\pard\pardeftab720\sl441\sa120\partightenfactor0
+
+\f2\b \cf4 \strokec4 Padding e Margin\cf2 \strokec2 \
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f3\b0 \cf2 Anteriormente usamos o\'a0
+\f4\i padding
+\f3\i0 \'a0e o\'a0
+\f4\i margin
+\f3\i0 \'a0da forma mais b\'e1sica, com apenas um valor, mas eles s\'e3o mais poderosos que isso. Se quisermos atribuir tamanhos diferentes para cada lado do\'a0
+\f4\i box
+\f3\i0 \'a0n\'f3s podemos, e vamos ver tr\'eas formas de fazer isso.\
+\'a0\
+A primeira \'e9 colocando um valor para as partes superior e inferior e depois para os lados esquerdo e direito.\
+O valor de 10\'a0
+\f4\i pixels
+\f3\i0 \'a0se refere ao eixo Y, ou partes superior e inferior, e os 5\'a0
+\f4\i pixels
+\f3\i0 \'a0se referem aos lados esquerdo e direito.\
+\'a0\
+A segunda forma \'e9 dando valores para cada lado do\'a0
+\f4\i box
+\f3\i0 .\
+Ent\'e3o come\'e7amos pelo topo com 15 pixels, passamos o lado direito com 10 pixels, depois para a parte inferior com 5 pixels e por \'faltimo o lado esquerdo com 0, e sempre nessa ordem.\
+Uma boa dica tamb\'e9m \'e9 que quando o valor for 0 n\'e3o precisamos n\'e3o precisamos colocar a unidade.\
+\'a0\
+A terceira forma \'e9 com as propriedades espec\'edficas para cada lado, at\'e9 agora t\'ednhamos visto atalhos para essas propriedades.\
+Essa op\'e7\'e3o \'e9 mais usada quando temos o mesmo valor para 3 lados, e o quarto precisa ter um valor diferente, ent\'e3o usamos o padding com apenas um valor e uma dessas op\'e7\'f5es para representar o lado diferente.\
+\'a0\
+\pard\pardeftab720\sl441\sa120\partightenfactor0
+
+\f2\b \cf4 \strokec4 Background\cf2 \strokec2 \
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f3\b0 \cf2 A propriedade\'a0
+\f4\i background
+\f3\i0 \'a0tamb\'e9m \'e9 um atalho para v\'e1rias propriedades, mas isso voc\'eas podem absorver aos poucos, e uma boa op\'e7\'e3o de leitura \'e9 a documenta\'e7\'e3o do MDN.\
+Por enquanto veremos apenas como mudar a cor de fundo.\
+\'a0\
+E aqui temos 3 formas de colocar uma cor de fundo, e ainda existem outras.\
+A primeira \'e9 pelo nome da cor em ingl\'eas, a segunda \'e9 pelo c\'f3digo hexadecimal e a terceira \'e9 usando apenas o atalho\'a0
+\f4\i background
+\f3\i0 .\
+\'a0\
+\pard\pardeftab720\sl441\sa120\partightenfactor0
+
+\f2\b \cf4 \strokec4 Border\cf2 \strokec2 \
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f3\b0 \cf2 Vimos que a propriedade\'a0
+\f4\i border
+\f3\i0 \'a0pode ter 3 valores: a largura, a cor e o estilo, mas existem algumas particularidades nisso.\
+A largura pode ser usada com v\'e1rias unidades, como px, em e mm. A cor pode ser atribu\'edda pelo nome ou por um c\'f3digo hexadecimal, assim como fizemos com o\'a0
+\f4\i background
+\f3\i0 , e o estilo \'e9 representada por palavras-chave, vamos ver algumas delas:\
+\'a0\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f2\b \cf2 solid
+\f3\b0 : mostra uma borda simples e reta;\
+
+\f2\b dotted
+\f3\b0 : s\'e3o bolinhas com um pequeno espa\'e7amento entre elas;\
+
+\f2\b dashed
+\f3\b0 : forma uma linha tracejada.\
+E aproveitando que mostrei esse c\'f3digo temos que falar sobre como separar a estiliza\'e7\'e3o dos lados de uma borda.\
+E se voc\'ea n\'e3o quiser usar a propriedade\'a0
+\f4\i border
+\f3\i0 \'a0existem as propriedade espec\'edficas para cada aspecto de uma borda, s\'e3o elas\'a0
+\f4\i border-width
+\f3\i0 \'a0para a largura,\'a0
+\f4\i border-color
+\f3\i0 \'a0para a cor e\'a0
+\f4\i border-style
+\f3\i0 \'a0para o estilo.\
+Aqui temos o mesmo c\'f3digo anterior de duas formas diferentes, a primeira com o atalho\'a0
+\f4\i border
+\f3\i0 \'a0e a segunda com cada propriedade espec\'edfica.\
+E depois disso podemos juntar os lados com os aspectos de uma borda e criar uma regra mais espec\'edfica ainda.\
+\'a0\
+\cf4 \strokec4 Border-radius\cf2 \strokec2 \
+E a \'faltima propriedade \'e9 o\'a0
+\f4\i border-radius
+\f3\i0 , ele permite arredondar os cantos de um elemento. Podemos usar v\'e1rias unidades, mas as mais comuns s\'e3o os pixels e a porcentagem.\
+Colocando apenas um valor mudamos todos os cantos do elemento, mas seguindo aquela mesma ordem que vimos no\'a0
+\f4\i padding
+\f3\i0 \'a0e\'a0
+\f4\i margin
+\f3\i0 \'a0- topo, direita, inferior e esquerda -\'a0 conseguimos alterar cada canto separadamente.\
+\pard\pardeftab720\sl441\sa120\partightenfactor0
+
+\f2\b \cf2 \'a0\
+\cf4 \strokec4 Exerc\'edcio\cf2 \strokec2 \
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f3\b0 \cf2 Neste exerc\'edcio vamos deixar o nosso site um pouco mais bonito usando as propriedades que acabamos de ver.\
+Vamos aumentar o padding para 15 pixels e colocar uma margem de tamb\'e9m de 15 pixels s\'f3 na parte de baixo do post.\
+Quando olhamos para os textos percebemos que os espa\'e7amentos est\'e3o diferentes do restante do post, ent\'e3o vamos padronizar isso.\
+No t\'edtulo do post vamos retirar todas as margens para depois colocar apenas uma margem inferior de 15 pixels. E no corpo do post precisamos adicionar uma classe e remover todas as margens para depois adicionar uma margem superior de 15 pixels.\
+Podemos manter o background branco, mas vamos diminuir a largura das bordas para 2 pixels e mudar a cor para a mesma do texto - #505050 - e por \'faltimo adicionaremos um border-radius, 5 pixels s\'e3o suficientes. Podemos adicionar esse mesmo de valor de border-radius na imagem, para isso vamos acrescentar uma class a imagem antes.\
+\'a0\
+\pard\pardeftab720\sl489\sa120\partightenfactor0
+
+\f2\b \cf2 Estilizando textos\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f3\b0 \cf2 J\'e1 sabemos que podemos mudar cor e tamanho de algumas fontes, e agora vamos nos aprofundar nisso.\
+\'a0\
+\pard\pardeftab720\sl441\sa120\partightenfactor0
+
+\f2\b \cf4 \strokec4 font-family\cf2 \strokec2 \
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f3\b0 \cf2 Com o font-family podemos alterar a fonte dos nossos textos, como uma fonte da internet ou uma que esteja instalada no nosso computador, mas vamos nos ater \'e0s fontes seguras, chamadas de web safe fonts.\
+Essas fontes s\'e3o chamadas assim pois s\'e3o encontradas em quases todos os sistemas e podem ser usadas sem preocupa\'e7\'e3o.\
+\'a0\
+\pard\pardeftab720\sl441\sa120\partightenfactor0
+
+\f2\b \cf4 \strokec4 font-size\cf2 \strokec2 \
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f3\b0 \cf2 O font-size nos ajuda a mudar o tamanho do texto, existem algumas unidades de medida para ele mas por enquanto os pixels s\'e3o suficientes para n\'f3s.\
+\'a0\
+\pard\pardeftab720\sl441\sa120\partightenfactor0
+
+\f2\b \cf4 \strokec4 font-style\cf2 \strokec2 \
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f3\b0 \cf2 Usamos o font-style para tornar um texto it\'e1lico, na maioria das vezes voc\'ea usar\'e1 apenas o valor\'a0
+\f4\i italic
+\f3\i0 \'a0para ele, mas se precisar tirar o it\'e1lico de um texto voc\'ea pode usar o valor\'a0
+\f4\i normal
+\f3\i0 .\
+\pard\pardeftab720\sa240\partightenfactor0
+\cf2 \
+}
