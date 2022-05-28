@@ -4,12 +4,11 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
-        
         {
             "type": "pwa-chrome",
             "request": "launch",
             "name": "Launch Chrome against localhost",
-            "url": "file:///Users/GabrielPinguim/workspace/Desafio-DIO/Desafios/HTML-CSS/Icon_chat_animation/index.html",
+            "url": "/Users/GabrielPinguim/workspace/Desafio-DIO/Desafios/HTML-CSS/Aula07/index.html",
             "webRoot": "${workspaceFolder}"
         }
     ]

@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Spline+Sans+Mono:wght@300;400;500;600;700&display=swap');
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Spline Sans Mono', monospace;
+}
+
+/*header */
+.header-wrapper {
+    height: auto;
+    width: auto;
+    background: linear-gradient(-45deg, #FBAB7E, #F7CE68);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+h1 {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+
+h1 {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.social_media {
+    margin-top: 1rem;
+    display: flex;
+}
+
+.social_media a {
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+    padding:  1rem 4rem;
+    border:  1px solid rgb(183, 5, 5);
+    min-width: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: -5s cubic-bezier(0.55, 0.025, 0.675, 0.97);
+
+}
+a:hover {
+    color: blue;
+    background-color: aqua;
+}
+
+/*
+
+.wrapper {
+    height: 400vh;
+    width: 100vw;
+    background: linear-gradient(-45deg, #999, #888, #555, #444);
+    background-size: 400% 400%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: backgroundTransition 8s ease-in-out infinite;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; 
+}
+
+
+h1 {
+    text-transform:uppercase;
+    letter-spacing: 4px;
+}
+
+
+h2 {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.social_media {
+    margin-top: 1rem;
+    display: flex;
+}
+
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+    padding: 1rem  4rem;
+    border: 1px solid black;
+    min-width: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s cubic-bezier(0.55, 0.025, 0.675, 0.97)
+
+}
+
+a:hover {
+    color: pink;
+    background-color: white;
+}
+
+@keyframes backgroundTransition {
+    0% {
+        background-position:  0% 50%;
+    }
+    50% {
+        background-position: 50% 100%;
+    }
+    100% {
+        background-position: 0% 90%;
+    }
+}
+
+*/
